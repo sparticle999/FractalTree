@@ -1,17 +1,21 @@
 var angle = 0
-var slider;
+//var slider;
 
 function setup(){
 	createCanvas(400,400);
-	slider = createSlider(0, TWO_PI, PI/4, 0.01);
+	//slider = createSlider(0, TWO_PI, PI/4, 0.01);
 }
 
 function draw(){
 	background(51);
-	angle = slider.value();
+	//angle = slider.value();
 	stroke(255);
 	translate(200,height);
 	branch(100);
+	angle += 0.01;
+	if(angle > TWO_PI){
+		angle = 0;
+	}
 }
 
 function branch(len){

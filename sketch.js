@@ -11,7 +11,7 @@ function draw(){
 	//angle = slider.value();
 	stroke(255);
 	translate(200,height);
-	branch(100);
+	branch(400);
 	angle += 0.01;
 	if(angle > TWO_PI){
 		angle = 0;
